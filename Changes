@@ -1,0 +1,12 @@
+Revision history for Perl extension Module::Build::JSAN.
+
+0.03
+
+0.02  2006-09-05T18:24:47
+      - Added all authors to META.yml.
+      - Expanded the documentation a bit.
+      - Fixed permissions issues with newer versions of Module::Build.
+      - No longer adding META.yml or *.gz to cleanup during the dist action.
+
+0.01  2005-09-08T05:09:22
+      - Initial public release.
