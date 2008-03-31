@@ -1,5 +1,7 @@
 package Module::Build::JSAN;
 
+# $Id$
+
 use strict;
 use vars qw($VERSION @ISA);
 
@@ -215,11 +217,7 @@ sub write_metafile {
         require JSON;
         $self->prepare_metadata( my $node = {} );
         open my $meta, '>', $metafile or die "Cannot open '$metafile': $!\n";
-        print $meta JSON->new->objToJson($node, {
-            pretty    => 1,
-            indent    => 4,
-            delimiter => 1
-        });
+        print $meta JSON->new->pretty->encode( $node );
         close $meta;
     } else {
         $self->log_warn(
@@ -437,7 +435,7 @@ Please send bug reports to <bug-module-build-jsan@rt.cpan.org>.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2005-2006 by David Wheeler, Casey West, and Rob Kinyon.
+Copyright 2005-2008 by David Wheeler, Casey West, and Rob Kinyon.
 
 This library is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
