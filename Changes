@@ -1,5 +1,7 @@
 Revision history for Perl extension Module::Build::JSAN.
 
+0.04
+
 0.03  2008-03-31T23:58:13
       - Updated for JSON 2.0, which is now required for generating META.json.
 
