@@ -1,5 +1,7 @@
 Revision history for Perl extension Module::Build::JSAN.
 
+0.05
+
 0.04  2008-04-03T20:17:19
       - No changes, just uploading to CPAN again now that DWHEELER is listed
         as co-maintainer, so that CPAN.pm will be able to install it.
