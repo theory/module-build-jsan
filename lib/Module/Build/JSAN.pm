@@ -69,7 +69,7 @@ sub ACTION_dist {
 
     for my $pod (@{Module::Build->rscan_dir($pod_dir, qr/\.pod$/)}) {
         # Generate HTML docs.
-        (my $html = $pod) =~ s|^$pod_dir|$html_dir|;
+        (my $html = $pod) =~ s|^\Q$pod_dir|$html_dir|;
         $html =~ s/\.pod$/.html/;
         my $dir = dirname $html;
 		unless (-e $dir) {
@@ -83,7 +83,7 @@ sub ACTION_dist {
         close $fh;
 
         # Generate text docs.
-        (my $txt = $pod) =~ s|^$pod_dir|$txt_dir|;
+        (my $txt = $pod) =~ s|^\Q$pod_dir|$txt_dir|;
         $txt =~ s/\.pod$/.txt/;
         $dir = dirname $txt;
 		unless (-e $dir) {
