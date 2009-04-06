@@ -14,11 +14,10 @@ my $build = Module::Build->new(
                             'Pod::Simple' => '3.02',
     },
     auto_features => {
-        JSON_support =>
-          {
-		      description => "Can write fully-functional META.json files",
-		      requires => { JSON => '2.00' },
-          },
+        JSON_support => {
+            description => "Can write fully-functional META.json files",
+            requires    => { Json => '2.00' },
+        },
     },
 );
 $build->create_build_script;

@@ -1,6 +1,6 @@
 Revision history for Perl extension Module::Build::JSAN.
 
-0.05
+0.05  2009-04-06T18:06:46
       - Fixed an issue with a meta character in the POD directory name not
         getting properly escaped in a Regular Expression. Reported by Burak
         Gürsoy (RT #24276).
