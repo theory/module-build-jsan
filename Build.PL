@@ -16,7 +16,7 @@ my $build = Module::Build->new(
     auto_features => {
         JSON_support => {
             description => "Can write fully-functional META.json files",
-            requires    => { Json => '2.00' },
+            requires    => { JSON => '2.00' },
         },
     },
 );
