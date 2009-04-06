@@ -417,8 +417,13 @@ The description of JavaScript namespaces on which JSAN modules are based.
 
 =back
 
-=head1 BUGS
+=head1 SUPPORT
 
+This module is stored in an open repository at the following address:
+
+L<http://github.com/theory/module-build-jsan/tree/>
+
+Patches against Module::Build::JSAN are welcome. Please send bug reports to
 Please send bug reports to <bug-module-build-jsan@rt.cpan.org>.
 
 =head1 AUTHORS
@@ -435,7 +440,8 @@ Please send bug reports to <bug-module-build-jsan@rt.cpan.org>.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2005-2008 by David Wheeler, Casey West, and Rob Kinyon.
+Copyright 2005-2009 by David Wheeler, Casey West, and Rob Kinyon. Some Rights
+Reserved.
 
 This library is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.

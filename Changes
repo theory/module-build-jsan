@@ -4,6 +4,7 @@ Revision history for Perl extension Module::Build::JSAN.
       - Fixed an issue with a meta character in the POD directory name not
         getting properly escaped in a Regular Expression. Reported by Burak
         Gürsoy (RT #24276).
+      - Added a link to the GitHub repository.
 
 0.04  2008-04-03T20:17:19
       - No changes, just uploading to CPAN again now that DWHEELER is listed
