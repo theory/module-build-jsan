@@ -1,6 +1,12 @@
 use Module::Build;
 
 my $build = Module::Build->new(
+    meta_merge => {
+        resources => {
+            repository => 'http://github.com/theory/module-build-jsan',
+        },
+    },
+
     module_name        => 'Module::Build::JSAN',
     license            => 'perl',
     create_makefile_pl => 'passthrough',
